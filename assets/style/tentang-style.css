@@ -1,0 +1,70 @@
+@font-face {
+  font-family: roboto-italic;
+  src: url(../fonts/Roboto-Italic.ttf);
+}
+
+body {
+  font-family: roboro-regular, sans-serif;
+  padding-top: 85px;
+  background-image: url(../img/the-beatles-hd-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  border: 1px solid #ccc;
+  background-color:  rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  margin: 16px auto;
+  text-align: justify;
+  box-shadow: 4px 4px rgba(197, 201, 198, 0.5);
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.desc {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: beatles, sans-serif;
+}
+
+.quote {
+  font-size: 20px;
+  font-family: roboto-italic, sans-serif;
+  line-height: 40px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+  .container img {
+    width: 90%;
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  .desc {
+    margin-top: 20px;
+  }
+}

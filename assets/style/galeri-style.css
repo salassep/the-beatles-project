@@ -1,0 +1,56 @@
+body {
+  font-family: roboro-regular, sans-serif;
+  padding-top: 115px;
+  background-image: url(../img/the-beatles-hd-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.gallery img:hover {
+  border: 1px solid #777;
+}
+
+
+.responsive {
+  padding: 6px 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    height: 100%;
+  }
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    height: 100%;
+  }
+  .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

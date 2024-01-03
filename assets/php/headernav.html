@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="container-icon">
+      <a href="index.php">
+        <img src="./assets/img/the-beatles-logo.png" alt="Logo The Beatles" class="logo">
+      </a>
+  </div>
+  <ul class="nav-list">
+    <a href="login.php">
+      <li>FAVORITMU</li>
+    </a>
+    <a href="album.php">
+      <li>ALBUM</li>
+    </a>
+    <a href="lagu.php">
+      <li>LAGU</li>
+    </a>
+    <a href="galeri.php">
+      <li>GALERI</li>
+    </a>
+    <a href="tentang.php">
+      <li>TENTANG</li>
+    </a>
+
+  </ul>
+  <div class="menu">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</nav>
+<script>
+  const toggleButton = document.getElementsByClassName('menu')[0];
+  const navList = document.getElementsByClassName('nav-list')[0];
+
+  toggleButton.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  })
+</script>

@@ -1,0 +1,22 @@
+body {
+  background-image: url(../img/the-beatles-hd-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-left: 70px;
+  padding-top: 150px;
+  font-family: roboto-bold, sans-serif;
+  color: white;
+}
+
+.container h1 {
+  text-shadow: 2px 2px 2px grey;
+  letter-spacing: 1.5px;
+  font-size: 70px;
+}
+
+.txt-beatles {
+  font-family: beatles, sans-serif;
+}
